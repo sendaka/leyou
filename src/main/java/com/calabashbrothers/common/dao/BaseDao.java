@@ -8,16 +8,8 @@ import java.util.List;
 
 /**
  * 基础DAO
+ *
  */
-public interface BaseDao<T extends BaseEntity> extends MyMapper<T> {
+public interface BaseDao<T extends BaseEntity> extends Mapper<T>, MySqlMapper<T> {
 
-    int deleteByPrimaryKeyO(Long id);
-
-    int insertO(T entity);
-
-    T selectByPrimaryKeyO(Long id);
-
-    List<T> selectAll();
-
-    int updateByPrimaryKeyO(T record);
 }
