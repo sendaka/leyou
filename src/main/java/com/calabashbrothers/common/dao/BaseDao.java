@@ -2,9 +2,8 @@ package com.calabashbrothers.common.dao;
 
 
 import com.calabashbrothers.common.entity.BaseEntity;
-import com.calabashbrothers.common.mapper.MyMapper;
-
-import java.util.List;
+import tk.mybatis.mapper.common.Mapper;
+import tk.mybatis.mapper.common.MySqlMapper;
 
 /**
  * 基础DAO
